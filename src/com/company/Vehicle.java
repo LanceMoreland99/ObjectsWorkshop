@@ -6,13 +6,15 @@ public class Vehicle {
     private String make;
     private String model;
     private String color;
+    private int year;
 
 
-    public Vehicle(String make, String model, String color){
+    public Vehicle(String make, String model, int year){
 
         this.make = make;
         this.model = model;
         this.color = color;
+        this.year = year;
     }
 
 
@@ -38,5 +40,11 @@ public class Vehicle {
 
     public void setColor(String color) {
         this.color = color;
+    }
+    public int getYear(){
+        return year;
+    }
+    public void setYear(int year) {
+        this.year = year;
     }
 }
